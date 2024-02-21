@@ -35,8 +35,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# api and admin panel url
-/config/*
 
-# for the images
-next.config.js
