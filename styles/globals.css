@@ -1,0 +1,367 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.maateen.me/kalpurush/font.css');
+
+*{
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+/* custom scrollbar */
+ .custom-scrollbar::-webkit-scrollbar-track
+ {
+   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+   background-color: #F5F5F5;
+   border-radius: 10px;
+ }
+ 
+ .custom-scrollbar::-webkit-scrollbar
+ {
+   width: 5px;
+   background-color: #F5F5F5;
+ }
+ 
+ .custom-scrollbar::-webkit-scrollbar-thumb
+ {
+   border-radius: 10px;
+   background-color: #FFF;
+   background-image: -webkit-gradient(linear,
+                      40% 0%,
+                      75% 84%,
+                      from(#4D9C41),
+                      to(#19911D),
+                      color-stop(.6,#54DE5D))
+ }
+
+ /* custom scrollbar 2*/
+ .custom-scrollbar2::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #F5F5F5;
+  border-radius: 10px;
+}
+
+.custom-scrollbar2::-webkit-scrollbar {
+  width: 5px;
+  background-color: #F5F5F5;
+}
+
+.custom-scrollbar2::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #19a061;
+}
+
+}
+
+
+
+
+
+
+* {
+  transition: all .1s linear;
+  font-family: 'Kalpurush', sans-serif;
+}
+
+
+
+.border-PrimaryColor {
+  --tw-border-opacity: 1;
+  border-color: rgb(52 135 57 / var(--tw-border-opacity));
+}
+
+.bg-PrimaryColor {
+  --tw-bg-opacity: 1;
+  background-color: rgb(52 135 57 / var(--tw-bg-opacity));
+}
+
+
+
+.owl-carousel .owl-prev {
+  position: absolute;
+  top: 0 !important;
+  bottom: 0 !important;
+  font-size: 40px !important;
+  color: rgb(3, 168, 44) !important;
+  left: -70px;
+  line-height: 55px !important;
+}
+
+.owl-carousel .owl-next {
+  position: absolute;
+  top: 0 !important;
+  bottom: 0 !important;
+  font-size: 40px !important;
+  color: rgb(1, 160, 28) !important;
+  right: -70px;
+  line-height: 55px !important;
+}
+
+.review_slide .owl-prev {
+  position: absolute;
+  top: 0 !important;
+  bottom: 0 !important;
+  font-size: 25px !important;
+  color: rgb(3, 168, 44) !important;
+  left: 15px !important;
+  line-height: 55px !important;
+}
+
+.review_slide .owl-next {
+  position: absolute;
+  top: 0 !important;
+  bottom: 0 !important;
+  font-size: 25px !important;
+  color: rgb(3, 168, 44) !important;
+  right: 15px !important;
+  line-height: 55px !important;
+}
+
+.con_carosel .owl-carousel .owl-prev span,
+.con_carosel .owl-carousel .owl-next span {
+  display: block;
+  background: #0092e754;
+  color: #ffffff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+}
+
+
+
+
+
+
+
+/* ////////////////slider section/////////////// */
+
+.owl-item {
+  width: 100%;
+  height: auto;
+  overflow: hidden !important;
+
+}
+
+
+.owl-dots {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  left: auto;
+  right: auto;
+  bottom: 2%;
+}
+
+.owl-dots button.owl-dot.active span,
+.owl-dots button.owl-dot:hover span {
+  background-color: #008300;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.owl-dots button.owl-dot {
+  border: 1px solid rgb(0, 117, 20) !important;
+  background: none;
+  border-radius: 50%;
+  height: 13px;
+  width: 13px;
+  position: relative;
+  margin: 3px;
+}
+
+
+
+
+
+button {
+  cursor: pointer;
+}
+
+.tactive {
+  background-color: #017F28 !important;
+  color: #FFFFFF !important;
+}
+
+.active {
+  color: #017F28 !important;
+}
+
+
+
+
+
+
+
+@media (max-width: 1050px) {
+  .owl-carousel .owl-prev {
+    top: 40%;
+    left: -30px;
+  }
+
+  .owl-carousel .owl-next {
+    top: 40%;
+    right: -30px;
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  .theme_h1,
+  .theme_h1_green,
+  .theme_h2_green {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .theme_h2 {
+    font-size: 16px;
+  }
+
+  .about_h1_green,
+  .about_h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+
+}
+
+@media (max-width: 800px) {
+
+
+  .owl-dots button.owl-dot.active span,
+  .owl-dots button.owl-dot:hover span {
+    height: 7px;
+    width: 7px;
+  }
+
+  .owl-dots button.owl-dot {
+    height: 8px;
+    width: 8px;
+  }
+
+  .owl-dots {
+    bottom: 10%;
+  }
+
+
+  .owl-carousel .owl-prev {
+    top: 40%;
+    left: 0px;
+  }
+
+  .owl-carousel .owl-next {
+    top: 40%;
+    right: 0px;
+  }
+
+  .owl-carousel .owl-prev,
+  .owl-carousel .owl-next {
+    line-height: 25px !important;
+  }
+
+  .con_carosel .owl-carousel .owl-prev span,
+  .con_carosel .owl-carousel .owl-next span {
+    width: 30px;
+    height: 30px;
+  }
+
+
+
+}
+
+
+@media (max-width: 550px) {
+  .owl-dots {
+    margin-top: -60px !important;
+  }
+}
+
+
+
+@media (max-width: 350px) {
+
+  .theme_h1,
+  .theme_h1_green,
+  .theme_h2_green {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .theme_h2 {
+    font-size: 14px;
+  }
+
+  .about_h1_green,
+  .about_h2 {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+}
+
+
+
+@media (min-width: 320px){
+  .carousel>.control-dots>li {
+    width: 8px !important;
+    height: 8px !important;
+    background: green !important;
+  }
+}
+@media (min-width: 1000px){
+  .carousel>.control-dots>li {
+    width: 12px !important;
+    height: 12px !important;
+    background: green !important;
+  }
+}
+
+/* .sliderwithtext > .carousel>.control-dots>li{
+  background: red !important;
+
+} */
+
+@media (min-width: 320px) {
+  .sliderwithtext > .carousel-root> .carousel-slider> .control-dots{
+    padding-bottom: 3.125em !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+}
+@media (min-width: 1024px) {
+  .sliderwithtext > .carousel-root> .carousel-slider> .control-dots{
+    padding-bottom: 3.875em !important;
+  }
+}
+@media (min-width: 1280px) {
+  .sliderwithtext > .carousel-root> .carousel-slider> .control-dots{
+    padding-bottom: 2.625em !important;
+  }
+}
+@media (min-width: 1440px) {
+  .sliderwithtext > .carousel-root> .carousel-slider> .control-dots{
+    padding-bottom: 4.625em !important;
+  }
+}
+@media (min-width: 2560px) {
+  .sliderwithtext > .carousel-root> .carousel-slider> .control-dots{
+    padding-bottom: 5.625em !important;
+  }
+}
